@@ -30,6 +30,11 @@ The full source lives at https://github.com/wppoland/plogins-bump.
 2. Activate it. WooCommerce must be active.
 3. Go to WooCommerce → Bump, choose the bump product, write the copy, enable, and save.
 
+== Screenshots ==
+
+1. The order-bump offer above the payment methods on the checkout, with a one-click checkbox that adds the product to the order.
+2. The Bump settings under WooCommerce: bump product, heading, checkbox label, description and optional special price.
+
 == Changelog ==
 
 = 1.0.1 =

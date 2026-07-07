@@ -7,22 +7,22 @@ msgstr ""
 "POT-Creation-Date: 2026-07-02T08:04:20+00:00\n"
 "PO-Revision-Date: 2026-07-07 00:00+0000\n"
 "Last-Translator: WPPoland <kontakt@wppoland.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl_PL\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Domain: plogins-bump\n"
-"Plural-Forms: nplurals=3; plural=(n == 1 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
-msgstr "Plogins Bump – order bump na checkoucie dla WooCommerce"
+msgstr "Plogins Bump – Checkout Order Bump für WooCommerce"
 
 msgid "https://plogins.com/plogins-bump/"
-msgstr "https://plogins.com/pl/plogins-bump/"
+msgstr "https://plogins.com/plogins-bump/"
 
 msgid "Show a one-click order-bump offer on the checkout so shoppers can add a complementary product before they pay."
-msgstr "Pokaż w kasie ofertę order bump jednym kliknięciem, aby klient mógł dodać produkt uzupełniający przed płatnością."
+msgstr "Zeigen Sie im Checkout ein Order-Bump-Angebot mit einem Klick, damit Käufer vor der Zahlung ein ergänzendes Produkt hinzufügen können."
 
 msgid "WPPoland.com"
 msgstr "WPPoland.com"
@@ -31,55 +31,55 @@ msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
 msgid "Plogins Bump requires WooCommerce to be active."
-msgstr "Plogins Bump wymaga aktywnego WooCommerce."
+msgstr "Plogins Bump erfordert, dass WooCommerce aktiv ist."
 
 msgid "Bump – Order Bump"
-msgstr "Bump – order bump"
+msgstr "Bump – Order Bump"
 
 msgid "Bump"
 msgstr "Bump"
 
 msgid "Settings"
-msgstr "Ustawienia"
+msgstr "Einstellungen"
 
 msgid "Show a one-click order-bump offer above the payment methods on the checkout. Ticking it adds the product to the order and recalculates the total before payment."
-msgstr "Pokaż ofertę order bump jednym kliknięciem nad metodami płatności w kasie. Zaznaczenie dodaje produkt do zamówienia i przelicza sumę przed płatnością."
+msgstr "Zeigen Sie im Checkout über den Zahlungsmethoden ein Order-Bump-Angebot mit einem Klick. Wird es aktiviert, wird das Produkt zur Bestellung hinzugefügt und die Summe vor der Zahlung neu berechnet."
 
 msgid "Enable order bump"
-msgstr "Włącz order bump"
+msgstr "Order-Bump aktivieren"
 
 msgid "Show the order-bump offer on the checkout."
-msgstr "Pokaż ofertę order bump na checkoucie."
+msgstr "Order-Bump-Angebot im Checkout anzeigen."
 
 msgid "Bump product"
-msgstr "Produkt bumpa"
+msgstr "Bump-Produkt"
 
 msgid "— Select a product —"
-msgstr "— Wybierz produkt —"
+msgstr "— Produkt auswählen —"
 
 msgid "A simple, purchasable product offered as the bump. Pick something cheap and complementary."
-msgstr "Prosty, możliwy do kupienia produkt oferowany jako bump. Wybierz coś niedrogiego i uzupełniającego."
+msgstr "Ein einfaches, kaufbares Produkt, das als Bump angeboten wird. Wählen Sie etwas Günstiges und Ergänzendes."
 
 msgid "Heading"
-msgstr "Nagłówek"
+msgstr "Überschrift"
 
 msgid "One-time offer"
-msgstr "Oferta jednorazowa"
+msgstr "Einmaliges Angebot"
 
 msgid "Checkbox label"
-msgstr "Etykieta pola wyboru"
+msgstr "Beschriftung des Kontrollkästchens"
 
 msgid "Yes, add this to my order!"
-msgstr "Tak, dodaj do zamówienia!"
+msgstr "Ja, zu meiner Bestellung hinzufügen!"
 
 msgid "Description"
-msgstr "Opis"
+msgstr "Beschreibung"
 
 msgid "Override price"
-msgstr "Nadpisz cenę"
+msgstr "Preis überschreiben"
 
 msgid "Optional special price for the bump line only (e.g. 19.00). Leave empty to use the product's normal price."
-msgstr "Opcjonalna cena specjalna tylko dla pozycji bumpa (np. 19,00). Zostaw puste, aby użyć normalnej ceny produktu."
+msgstr "Optionaler Sonderpreis nur für die Bump-Position (z. B. 19,00). Leer lassen, um den normalen Produktpreis zu verwenden."
 
 msgid "Accent colour"
-msgstr "Kolor akcentu"
+msgstr "Akzentfarbe"

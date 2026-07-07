@@ -33,3 +33,7 @@
 /.playwright-mcp
 /.shotkit
 /.raw
+
+# editor backups (never ship / never a badly_named_files reject)
+*~
+*.bak

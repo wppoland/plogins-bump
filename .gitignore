@@ -1,0 +1,6 @@
+/vendor/
+/node_modules/
+/build/
+.DS_Store
+.phpunit.result.cache
+# composer.lock is committed to pin the dev tooling versions.

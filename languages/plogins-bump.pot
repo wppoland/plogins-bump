@@ -1,0 +1,114 @@
+# Copyright (C) 2026 WPPoland.com
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bump\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-02T08:04:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: plogins-bump\n"
+
+#. Plugin Name of the plugin
+#: plogins-bump.php
+msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: plogins-bump.php
+msgid "https://plogins.com/plogins-bump/"
+msgstr ""
+
+#. Description of the plugin
+#: plogins-bump.php
+msgid "Show a one-click order-bump offer on the checkout so shoppers can add a complementary product before they pay."
+msgstr ""
+
+#. Author of the plugin
+#: plogins-bump.php
+msgid "WPPoland.com"
+msgstr ""
+
+#. Author URI of the plugin
+#: plogins-bump.php
+msgid "https://wppoland.com"
+msgstr ""
+
+#: plogins-bump.php:48
+msgid "Plogins Bump requires WooCommerce to be active."
+msgstr ""
+
+#: src/Admin/Settings.php:33
+msgid "Bump – Order Bump"
+msgstr ""
+
+#: src/Admin/Settings.php:34
+msgid "Bump"
+msgstr ""
+
+#: src/Admin/Settings.php:50
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:80
+msgid "Show a one-click order-bump offer above the payment methods on the checkout. Ticking it adds the product to the order and recalculates the total before payment."
+msgstr ""
+
+#: src/Admin/Settings.php:86
+msgid "Enable order bump"
+msgstr ""
+
+#: src/Admin/Settings.php:90
+msgid "Show the order-bump offer on the checkout."
+msgstr ""
+
+#: src/Admin/Settings.php:95
+msgid "Bump product"
+msgstr ""
+
+#: src/Admin/Settings.php:98
+msgid "— Select a product —"
+msgstr ""
+
+#: src/Admin/Settings.php:103
+msgid "A simple, purchasable product offered as the bump. Pick something cheap and complementary."
+msgstr ""
+
+#: src/Admin/Settings.php:107
+msgid "Heading"
+msgstr ""
+
+#: src/Admin/Settings.php:108
+#: src/Service/BumpService.php:99
+msgid "One-time offer"
+msgstr ""
+
+#: src/Admin/Settings.php:111
+msgid "Checkbox label"
+msgstr ""
+
+#: src/Admin/Settings.php:112
+#: src/Service/BumpService.php:101
+msgid "Yes, add this to my order!"
+msgstr ""
+
+#: src/Admin/Settings.php:115
+msgid "Description"
+msgstr ""
+
+#: src/Admin/Settings.php:119
+msgid "Override price"
+msgstr ""
+
+#: src/Admin/Settings.php:122
+msgid "Optional special price for the bump line only (e.g. 19.00). Leave empty to use the product's normal price."
+msgstr ""
+
+#: src/Admin/Settings.php:126
+msgid "Accent colour"
+msgstr ""

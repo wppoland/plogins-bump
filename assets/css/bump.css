@@ -1,0 +1,88 @@
+/* Plogins Bump — checkout order-bump offer. Scoped to .plogins-bump so it never
+   leaks onto the rest of the checkout. Dashed accent border draws the eye. */
+.plogins-bump {
+	--plogins-bump-accent: #d97706;
+	margin: 1em 0;
+	border: 2px dashed var(--plogins-bump-accent);
+	border-radius: 8px;
+	background: color-mix(in srgb, var(--plogins-bump-accent) 7%, #fff);
+	transition: background .2s ease;
+}
+
+.plogins-bump--active {
+	background: color-mix(in srgb, var(--plogins-bump-accent) 14%, #fff);
+}
+
+.plogins-bump__inner {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 14px 16px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.plogins-bump__checkbox {
+	flex: 0 0 auto;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+}
+
+.plogins-bump__media img {
+	display: block;
+	width: 56px;
+	height: 56px;
+	object-fit: cover;
+	border-radius: 6px;
+	margin: 0;
+}
+
+.plogins-bump__body {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	line-height: 1.35;
+}
+
+.plogins-bump__heading {
+	font-size: .75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	color: var(--plogins-bump-accent);
+}
+
+.plogins-bump__price {
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.plogins-bump__desc {
+	font-size: .875em;
+	opacity: .8;
+}
+
+.plogins-bump__spinner {
+	flex: 0 0 auto;
+	margin-left: auto;
+	width: 18px;
+	height: 18px;
+	border: 2px solid color-mix(in srgb, var(--plogins-bump-accent) 40%, transparent);
+	border-top-color: var(--plogins-bump-accent);
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.plogins-bump--loading .plogins-bump__spinner {
+	opacity: 1;
+	animation: plogins-bump-spin .6s linear infinite;
+}
+
+@keyframes plogins-bump-spin {
+	to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.plogins-bump--loading .plogins-bump__spinner { animation: none; }
+}

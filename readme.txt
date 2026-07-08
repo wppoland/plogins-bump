@@ -4,7 +4,7 @@ Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,14 @@ The full source lives at https://github.com/wppoland/plogins-bump.
 1. The order-bump offer above the payment methods on the checkout, with a one-click checkbox that adds the product to the order.
 2. The Bump settings under WooCommerce: bump product, heading, checkbox label, description and optional special price.
 
+== Translations ==
+
+Plogins Bump includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-bump`, so WordPress.org language packs can also override or extend these bundled translations.
+
 == Changelog ==
+
+= 1.0.2 =
+* Added bundled Polish, German and Spanish translations for the plugin interface.
 
 = 1.0.1 =
 * Initial release: single checkout order bump with optional price override.

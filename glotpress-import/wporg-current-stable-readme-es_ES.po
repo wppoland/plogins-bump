@@ -1,0 +1,34 @@
+# wp.org Stable Readme translation (es_ES)
+msgid ""
+msgstr ""
+"Project-Id-Version: bump Stable Readme\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Show a one-click order-bump offer on the checkout so shoppers can add a complementary product before they pay."
+msgstr "Muestre una oferta de aumento de pedido con un solo clic en la caja para que los compradores puedan añadir un producto complementario antes de pagar."
+
+msgid "Plogins Bump adds a single, high-visibility order-bump offer above the payment methods on the classic WooCommerce checkout. Ticking the checkbox adds your chosen product to the order and WooCommerce recalculates every total before payment, so the amount sent to the gateway already includes the bump. Unticking removes it just as fast."
+msgstr "Plogins Bump añade una oferta única de aumento de pedidos de alta visibilidad encima de los métodos de pago en el proceso de pago clásico de WooCommerce. Al marcar la casilla de verificación, se añade el producto elegido al pedido y WooCommerce recalcula cada total antes del pago, por lo que el monto enviado a la puerta de enlace ya incluye el aumento. Al desmarcarlo se elimina igual de rápido."
+
+msgid "* One offer, one checkbox, above the payment methods.\n* Pick any simple, purchasable product as the bump.\n* Optional special price for the bump line only.\n* Uses WooCommerce's own cart and `update_checkout` recalculation — no custom totals, no gateway surprises.\n* HPOS compatible, scoped styles, no layout shift."
+msgstr "* Una oferta, una casilla de verificación, encima de los métodos de pago.\n* Elija cualquier producto simple que se pueda comprar como impulso.\n* Precio especial opcional solo para la línea de choque.\n* Utiliza el propio carrito de WooCommerce y el recálculo `update_checkout`: sin totales personalizados ni sorpresas en la puerta de enlace.\n* Compatible con HPOS, estilos con alcance, sin cambios de diseño."
+
+msgid "The bump line is tagged privately so it is never confused with a copy the shopper added themselves. Classic (shortcode) checkout."
+msgstr "La línea de relieve está etiquetada de forma privada, por lo que nunca se confunde con una copia que el propio comprador agregó. Pago clásico (código corto)."
+
+msgid "The full source lives at https://github.com/wppoland/plogins-bump."
+msgstr "La fuente completa se encuentra en https://github.com/wppoland/plogins-bump."
+
+msgid "1. Upload to `/wp-content/plugins/bump`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Go to WooCommerce → Bump, choose the bump product, write the copy, enable, and save."
+msgstr "1. Cargue en `/wp-content/plugins/bump`, o instálelo a través de Complementos → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar activo.\n3. Vaya a WooCommerce → Bump, elija el producto destacado, escriba la copia, habilítelo y guárdelo."
+
+msgid "1. The order-bump offer above the payment methods on the checkout, with a one-click checkbox that adds the product to the order.\n2. The Bump settings under WooCommerce: bump product, heading, checkbox label, description and optional special price."
+msgstr "1. La oferta de aumento de pedido encima de los métodos de pago en la caja, con una casilla de verificación de un clic que añade el producto al pedido.\n2. La configuración de Bump en WooCommerce: producto destacado, encabezado, etiqueta de casilla de verificación, descripción y precio especial opcional."
+
+msgid "* Initial release: single checkout order bump with optional price override."
+msgstr "* Lanzamiento inicial: aumento de pedido de pago único con anulación de precio opcional."
+

@@ -1,4 +1,4 @@
-=== Plogins Bump - Checkout Order Bump for WooCommerce ===
+=== Bump - Checkout Order Bump for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5

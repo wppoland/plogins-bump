@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Bump - Checkout Order Bump for WooCommerce
+ * Plugin Name:       Bump - Checkout Order Bump for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-bump/
  * Description:        Show a one-click order-bump offer on the checkout so shoppers can add a complementary product before they pay.
  * Version:           1.0.2

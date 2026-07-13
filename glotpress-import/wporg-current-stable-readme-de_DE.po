@@ -9,26 +9,32 @@ msgstr ""
 "X-Generator: plogins-i18n\n"
 
 msgid "Show a one-click order-bump offer on the checkout so shoppers can add a complementary product before they pay."
-msgstr "Zeige an der Kasse ein One-Click-Angebot zur Bestellerhöhung an, damit Käufer vor dem Bezahlen ein ergänzendes Produkt hinzufügen können."
+msgstr "Zeige an der Kasse ein Order-Bump-Angebot mit einem Klick, damit die Kundschaft vor dem Bezahlen ein ergänzendes Produkt hinzufügen kann."
 
 msgid "Plogins Bump adds a single, high-visibility order-bump offer above the payment methods on the classic WooCommerce checkout. Ticking the checkbox adds your chosen product to the order and WooCommerce recalculates every total before payment, so the amount sent to the gateway already includes the bump. Unticking removes it just as fast."
-msgstr "Plogins Bump fügt über den Zahlungsmethoden im klassischen WooCommerce-Checkout ein einzelnes, gut sichtbares Order-Bump-Angebot hinzu. Wenn du das Kontrollkästchen aktivieren, wird dein ausgewähltes Produkt zur Bestellung hinzugefügt und WooCommerce berechnet jeden Gesamtbetrag vor der Zahlung neu, sodass der an das Gateway gesendete Betrag den Aufschlag bereits enthält. Wenn du das Häkchen entfernen, wird es genauso schnell entfernt."
+msgstr "Plogins Bump fügt über den Zahlungsmethoden im klassischen WooCommerce-Checkout ein einzelnes, gut sichtbares Order-Bump-Angebot hinzu. Wenn du das Kontrollkästchen aktivierst, wird dein gewähltes Produkt zur Bestellung hinzugefügt und WooCommerce berechnet jeden Gesamtbetrag vor der Zahlung neu, sodass der an das Zahlungs-Gateway gesendete Betrag den Bump bereits enthält. Wenn du das Häkchen wieder entfernst, wird er genauso schnell entfernt."
 
 msgid "* One offer, one checkbox, above the payment methods.\n* Pick any simple, purchasable product as the bump.\n* Optional special price for the bump line only.\n* Uses WooCommerce's own cart and `update_checkout` recalculation — no custom totals, no gateway surprises.\n* HPOS compatible, scoped styles, no layout shift."
-msgstr "* Ein Angebot, ein Kontrollkästchen oberhalb der Zahlungsarten.\n* Wähle als Beule ein beliebiges einfaches, käufliches Produkt.\n* Optionaler Sonderpreis nur für die Stoßlinie.\n* Verwendet WooCommerces eigenen Warenkorb und die Neuberechnung von „update_checkout“ – keine benutzerdefinierten Gesamtsummen, keine Gateway-Überraschungen.\n* HPOS-kompatibel, bereichsbezogene Stile, keine Layoutverschiebung."
+msgstr "* Ein Angebot, ein Kontrollkästchen oberhalb der Zahlungsmethoden.\n* Wähle ein beliebiges einfaches, käufliches Produkt als Bump.\n* Optionaler Sonderpreis nur für die Bump-Zeile.\n* Nutzt WooCommerces eigenen Warenkorb und die Neuberechnung über `update_checkout` — keine eigenen Summen, keine Überraschungen am Gateway.\n* HPOS-kompatibel, abgegrenzte Styles, keine Layout-Verschiebung."
 
 msgid "The bump line is tagged privately so it is never confused with a copy the shopper added themselves. Classic (shortcode) checkout."
-msgstr "Die Bump-Zeile ist privat markiert, sodass sie nie mit einer Kopie verwechselt werden kann, die der Käufer selbst hinzugefügt hat. Klassischer Checkout (Shortcode)."
+msgstr "Die Bump-Zeile ist privat markiert, sodass sie nie mit einer Position verwechselt wird, die die Kundschaft selbst hinzugefügt hat. Klassischer Checkout (Shortcode)."
 
 msgid "The full source lives at https://github.com/wppoland/plogins-bump."
-msgstr "Die vollständige Quelle befindet sich unter https://github.com/wppoland/plogins-bump."
+msgstr "Der vollständige Quellcode liegt unter https://github.com/wppoland/plogins-bump."
 
 msgid "1. Upload to `/wp-content/plugins/bump`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Go to WooCommerce → Bump, choose the bump product, write the copy, enable, and save."
-msgstr "1. Lade es nach „/wp-content/plugins/bump“ hoch oder installiere es über Plugins → Neu hinzufügen.\n2. Aktiviere es. WooCommerce muss aktiv sein.\n3. Gehe zu WooCommerce → Bump, wähle das Bump-Produkt aus, schreibe die Kopie, aktiviere und speichere."
+msgstr "1. Lade das Plugin nach `/wp-content/plugins/bump` hoch oder installiere es über Plugins → Installieren.\n2. Aktiviere es. WooCommerce muss aktiv sein.\n3. Gehe zu WooCommerce → Bump, wähle das Bump-Produkt, schreibe den Text, aktiviere das Angebot und speichere."
 
 msgid "1. The order-bump offer above the payment methods on the checkout, with a one-click checkbox that adds the product to the order.\n2. The Bump settings under WooCommerce: bump product, heading, checkbox label, description and optional special price."
-msgstr "1. Das Order-Bump-Angebot über den Zahlungsmethoden an der Kasse, mit einem Ein-Klick-Kontrollkästchen, das das Produkt zur Bestellung hinzufügt.\n2. Die Bump-Einstellungen unter WooCommerce: Bump-Produkt, Überschrift, Kontrollkästchenbezeichnung, Beschreibung und optionaler Sonderpreis."
+msgstr "1. Das Order-Bump-Angebot über den Zahlungsmethoden an der Kasse, mit einem Kontrollkästchen, das das Produkt per Klick zur Bestellung hinzufügt.\n2. Die Bump-Einstellungen unter WooCommerce: Bump-Produkt, Überschrift, Kontrollkästchen-Beschriftung, Beschreibung und optionaler Sonderpreis."
+
+msgid "Plogins Bump includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-bump`, so WordPress.org language packs can also override or extend these bundled translations."
+msgstr "Plogins Bump enthält polnische, deutsche und spanische Übersetzungen für die Plugin-Oberfläche. Die Textdomain ist `plogins-bump`, sodass Sprachpakete von WordPress.org diese mitgelieferten Übersetzungen ebenfalls überschreiben oder erweitern können."
+
+msgid "* Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "* Mitgelieferte polnische, deutsche und spanische Übersetzungen für die Plugin-Oberfläche hinzugefügt."
 
 msgid "* Initial release: single checkout order bump with optional price override."
-msgstr "* Erstveröffentlichung: Single-Checkout-Auftragserhöhung mit optionaler Preisüberschreibung."
+msgstr "* Erstveröffentlichung: einzelner Order Bump im Checkout mit optionaler Preisüberschreibung."
 

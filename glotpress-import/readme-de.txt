@@ -17,7 +17,7 @@ Plogins Bump fügt über den Zahlungsmethoden im klassischen WooCommerce-Checkou
 * Ein Angebot, ein Kontrollkästchen oberhalb der Zahlungsmethoden.
 * Wähle ein beliebiges einfaches, käufliches Produkt als Bump.
 * Optionaler Sonderpreis nur für die Bump-Zeile.
-* Nutzt WooCommerces eigenen Warenkorb und die Neuberechnung über `update_checkout` — keine eigenen Summen, keine Überraschungen am Gateway.
+* Nutzt WooCommerces eigenen Warenkorb und die Neuberechnung über `update_checkout`, keine eigenen Summen, keine Überraschungen am Gateway.
 * HPOS-kompatibel, abgegrenzte Styles, keine Layout-Verschiebung.
 
 Die Bump-Zeile ist privat markiert, sodass sie nie mit einer Position verwechselt wird, die die Kundschaft selbst hinzugefügt hat. Klassischer Checkout (Shortcode).

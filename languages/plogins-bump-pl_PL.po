@@ -49,8 +49,8 @@ msgid "Plogins Bump requires WooCommerce to be active."
 msgstr "Plogins Bump wymaga aktywnego WooCommerce."
 
 #: src/Admin/Settings.php:33
-msgid "Bump – Order Bump"
-msgstr "Bump – podbicie zamówienia"
+msgid "Bump, Order Bump"
+msgstr "Bump, podbicie zamówienia"
 
 #: src/Admin/Settings.php:34
 msgid "Bump"
@@ -82,8 +82,8 @@ msgid "Bump product"
 msgstr "Produkt bumpa"
 
 #: src/Admin/Settings.php:98
-msgid "— Select a product —"
-msgstr "— Wybierz produkt —"
+msgid "- Select a product -"
+msgstr "- Wybierz produkt -"
 
 #: src/Admin/Settings.php:103
 msgid ""

@@ -18,7 +18,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-bump.php
 msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
-msgstr "Plogins Bump – Checkout Order Bump für WooCommerce"
+msgstr "Plogins Bump, Checkout Order Bump für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-bump.php
@@ -49,8 +49,8 @@ msgid "Plogins Bump requires WooCommerce to be active."
 msgstr "Plogins Bump erfordert, dass WooCommerce aktiv ist."
 
 #: src/Admin/Settings.php:33
-msgid "Bump – Order Bump"
-msgstr "Bump – Order-Bump"
+msgid "Bump, Order Bump"
+msgstr "Bump, Order-Bump"
 
 #: src/Admin/Settings.php:34
 msgid "Bump"
@@ -83,8 +83,8 @@ msgid "Bump product"
 msgstr "Bump-Produkt"
 
 #: src/Admin/Settings.php:98
-msgid "— Select a product —"
-msgstr "— Produkt auswählen —"
+msgid "- Select a product -"
+msgstr "- Produkt auswählen -"
 
 #: src/Admin/Settings.php:103
 msgid ""

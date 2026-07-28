@@ -1,4 +1,4 @@
-/* Plogins Bump — checkout order-bump offer. Scoped to .plogins-bump so it never
+/* Plogins Bump, checkout order-bump offer. Scoped to .plogins-bump so it never
    leaks onto the rest of the checkout. Dashed accent border draws the eye. */
 .plogins-bump {
 	--plogins-bump-accent: #d97706;

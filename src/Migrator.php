@@ -8,7 +8,7 @@ defined('ABSPATH') || exit;
 
 /**
  * Idempotent version marker, run on every boot. Bump is stateless (a single
- * settings option, no tables), so there is nothing to migrate yet — the marker
+ * settings option, no tables), so there is nothing to migrate yet, the marker
  * exists so future schema steps have a home.
  */
 final class Migrator

@@ -1,6 +1,6 @@
 <?php
 /**
- * Uninstall cleanup for Plogins Bump. Stateless — only a settings option and a
+ * Uninstall cleanup for Plogins Bump. Stateless, only a settings option and a
  * schema-version marker. Both removed here, multisite-aware.
  *
  * @package Bump

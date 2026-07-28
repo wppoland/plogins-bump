@@ -4,7 +4,7 @@ Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ Plogins Bump adds a single, high-visibility order-bump offer above the payment m
 * One offer, one checkbox, above the payment methods.
 * Pick any simple, purchasable product as the bump.
 * Optional special price for the bump line only.
-* Uses WooCommerce's own cart and `update_checkout` recalculation — no custom totals, no gateway surprises.
+* Uses WooCommerce's own cart and `update_checkout` recalculation, no custom totals, no gateway surprises.
 * HPOS compatible, scoped styles, no layout shift.
 
 The bump line is tagged privately so it is never confused with a copy the shopper added themselves. Classic (shortcode) checkout.

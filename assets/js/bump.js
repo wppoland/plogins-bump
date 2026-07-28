@@ -1,12 +1,12 @@
 /**
- * Plogins Bump — checkout order-bump toggle.
+ * Plogins Bump, checkout order-bump toggle.
  *
  * On checkbox change: POST add/remove to the bump_toggle endpoint, then trigger
  * WooCommerce's own `update_checkout` so every total (and the amount sent to the
  * gateway) is recalculated natively. jQuery is a dependency of the checkout page,
  * so we reuse it for the update_checkout event.
  *
- * ponytail: no build step, no framework — one delegated handler.
+ * ponytail: no build step, no framework, one delegated handler.
  */
 (function ($) {
 	'use strict';

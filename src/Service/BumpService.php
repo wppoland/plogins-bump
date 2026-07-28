@@ -16,7 +16,7 @@ defined('ABSPATH') || exit;
  * the payment methods. Ticking it POSTs to `bump_toggle`, which adds the product
  * to the cart tagged with a private `_plogins_bump` flag (so it is a distinct
  * line, never confused with a manually-added copy). The script then triggers
- * WooCommerce's own `update_checkout`, which recalculates every total — so the
+ * WooCommerce's own `update_checkout`, which recalculates every total, so the
  * amount handed to the gateway (Tpay/BLIK) already includes the bump before
  * payment starts. Unticking removes exactly that flagged line.
  *
@@ -39,7 +39,7 @@ final class BumpService implements HasHooks
         add_action('wp_ajax_nopriv_' . self::AJAX_ACTION, [$this, 'ajaxToggle']);
 
         // Gate on `enabled` only. The bump product is resolved lazily inside each
-        // callback — never here: registerHooks() runs at init priority 0, before
+        // callback, never here: registerHooks() runs at init priority 0, before
         // WooCommerce registers the `product` post type (init ~5), so a product
         // lookup at this point would always fail.
         if (empty($this->settings()['enabled'])) {
@@ -65,7 +65,7 @@ final class BumpService implements HasHooks
             return null;
         }
 
-        // Variable products need a chosen variation — out of scope for the bump.
+        // Variable products need a chosen variation, out of scope for the bump.
         if ($product->is_type('variable')) {
             return null;
         }

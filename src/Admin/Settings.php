@@ -30,7 +30,7 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Bump – Order Bump', 'plogins-bump'),
+            __('Bump, Order Bump', 'plogins-bump'),
             __('Bump', 'plogins-bump'),
             'manage_woocommerce',
             self::PAGE,
@@ -95,7 +95,7 @@ final class Settings implements HasHooks
                             <th scope="row"><label for="bump_product"><?php esc_html_e('Bump product', 'plogins-bump'); ?></label></th>
                             <td>
                                 <select id="bump_product" name="<?php echo esc_attr(self::OPTION); ?>[product_id]">
-                                    <option value="0"><?php esc_html_e('— Select a product —', 'plogins-bump'); ?></option>
+                                    <option value="0"><?php esc_html_e('- Select a product -', 'plogins-bump'); ?></option>
                                     <?php foreach ($this->productChoices() as $id => $label) : ?>
                                         <option value="<?php echo esc_attr((string) $id); ?>" <?php selected((int) $s['product_id'], $id); ?>><?php echo esc_html($label); ?></option>
                                     <?php endforeach; ?>

@@ -17,7 +17,7 @@ Plogins Bump dodaje jedną, dobrze widoczną ofertę order bump nad metodami pł
 * Jedna oferta, jedno pole wyboru nad metodami płatności.
 * Wybierz dowolny prosty, możliwy do zakupu produkt jako bump.
 * Opcjonalna cena specjalna tylko dla pozycji bump.
-* Korzysta z własnego koszyka WooCommerce i przeliczenia `update_checkout` — bez własnych sum, bez niespodzianek przy bramce płatności.
+* Korzysta z własnego koszyka WooCommerce i przeliczenia `update_checkout`, bez własnych sum, bez niespodzianek przy bramce płatności.
 * Zgodne z HPOS, style o ograniczonym zakresie, bez przeskoku układu.
 
 Pozycja bump jest oznaczona prywatnie, więc nigdy nie zostanie pomylona z pozycją dodaną przez kupującego. Klasyczna kasa (shortcode).

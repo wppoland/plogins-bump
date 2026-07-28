@@ -17,7 +17,7 @@ Plogins Bump añade una única oferta de order bump muy visible encima de los m�
 * Una oferta, una casilla, encima de los métodos de pago.
 * Elige cualquier producto simple y comprable como bump.
 * Precio especial opcional solo para la línea del bump.
-* Usa el propio carrito de WooCommerce y el recálculo de `update_checkout` — sin totales personalizados ni sorpresas en la pasarela.
+* Usa el propio carrito de WooCommerce y el recálculo de `update_checkout`, sin totales personalizados ni sorpresas en la pasarela.
 * Compatible con HPOS, estilos acotados y sin saltos de diseño.
 
 La línea del bump está etiquetada de forma privada, así que nunca se confunde con una línea que el propio cliente haya añadido. Pago clásico (shortcode).

@@ -197,7 +197,9 @@ final class BumpService implements HasHooks
 
         foreach ($cart->get_cart() as $item) {
             if (! empty($item[self::FLAG]) && isset($item['data']) && $item['data'] instanceof \WC_Product) {
-                $item['data']->set_price((float) $override);
+                // WC_Product::set_price() is typed for a string; it stores the
+                // value as given, so hand it the numeric string we validated.
+                $item['data']->set_price($override);
             }
         }
     }

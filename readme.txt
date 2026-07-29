@@ -4,7 +4,7 @@ Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ The full source lives at https://github.com/wppoland/plogins-bump.
 Plogins Bump includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-bump`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.4 =
+* Fix: the bump price override is handed to WooCommerce as the numeric string it already is, instead of being cast to a float first. WC_Product::set_price() is typed for a string and stores what it is given.
 
 = 1.0.2 =
 * Added bundled Polish, German and Spanish translations for the plugin interface.

@@ -74,6 +74,20 @@ final class Settings implements HasHooks
         }
 
         $s = $this->settings();
+
+        // The checkout quietly drops a bump product that is not purchasable or is
+        // out of stock: bumpProduct() returns null, nothing renders, no styles load.
+        // The merchant saw their product still selected on this screen while the
+        // shopper saw no offer at all. So the list now only offers what the checkout
+        // will accept, and a saved choice that has since fallen out of that set is
+        // kept but flagged instead of looking fine.
+        $choices  = $this->productChoices();
+        $selected = (int) $s['product_id'];
+        $stale    = $selected > 0 && ! isset($choices[$selected]);
+
+        if ($stale) {
+            $choices[$selected] = $this->staleChoiceLabel($selected);
+        }
         ?>
         <div class="wrap">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
@@ -96,11 +110,14 @@ final class Settings implements HasHooks
                             <td>
                                 <select id="bump_product" name="<?php echo esc_attr(self::OPTION); ?>[product_id]">
                                     <option value="0"><?php esc_html_e('- Select a product -', 'plogins-bump'); ?></option>
-                                    <?php foreach ($this->productChoices() as $id => $label) : ?>
-                                        <option value="<?php echo esc_attr((string) $id); ?>" <?php selected((int) $s['product_id'], $id); ?>><?php echo esc_html($label); ?></option>
+                                    <?php foreach ($choices as $id => $label) : ?>
+                                        <option value="<?php echo esc_attr((string) $id); ?>" <?php selected($selected, $id); ?>><?php echo esc_html($label); ?></option>
                                     <?php endforeach; ?>
                                 </select>
-                                <p class="description"><?php esc_html_e('A simple, purchasable product offered as the bump. Pick something cheap and complementary.', 'plogins-bump'); ?></p>
+                                <p class="description"><?php esc_html_e('A simple, purchasable product offered as the bump. Pick something cheap and complementary. Products with no price, and products out of stock, are not listed because the checkout will not show them.', 'plogins-bump'); ?></p>
+                                <?php if ($stale) : ?>
+                                    <p class="notice notice-warning inline"><?php esc_html_e('The saved product has no price or is out of stock, so the offer stays hidden on the checkout. Give it a price and stock, or pick another product.', 'plogins-bump'); ?></p>
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <tr>
@@ -154,10 +171,31 @@ final class Settings implements HasHooks
             if (! $product instanceof \WC_Product) {
                 continue;
             }
+            // Same test BumpService::bumpProduct() applies at checkout.
+            if (! $product->is_purchasable() || ! $product->is_in_stock()) {
+                continue;
+            }
             $choices[$product->get_id()] = sprintf('%s (%s)', $product->get_name(), wp_strip_all_tags($product->get_price_html()));
         }
 
         return $choices;
+    }
+
+    /**
+     * Label for a saved product the checkout will no longer offer. Kept in the
+     * select so saving the page does not silently reset the merchant's choice.
+     */
+    private function staleChoiceLabel(int $productId): string
+    {
+        $product = wc_get_product($productId);
+
+        $name = $product instanceof \WC_Product
+            ? $product->get_name()
+            /* translators: %d: product id. */
+            : sprintf(__('Product #%d', 'plogins-bump'), $productId);
+
+        /* translators: %s: product name. */
+        return sprintf(__('%s (not available on the checkout)', 'plogins-bump'), $name);
     }
 
     /**
@@ -177,7 +215,18 @@ final class Settings implements HasHooks
             ? number_format((float) str_replace(',', '.', $price), wc_get_price_decimals(), '.', '')
             : '';
 
-        $accent = isset($raw['accent_color']) ? sanitize_hex_color((string) $raw['accent_color']) : '';
+        // The field's pattern makes the leading hash optional, so the browser
+        // happily submits "d97706". sanitize_hex_color() insists on the hash and
+        // returned null for it, the accent saved empty, and the merchant got a
+        // blank field back while the shopper kept seeing the packaged orange.
+        // Put the hash back before sanitising.
+        $accent = isset($raw['accent_color']) ? trim((string) $raw['accent_color']) : '';
+
+        if ('' !== $accent && ! str_starts_with($accent, '#')) {
+            $accent = '#' . $accent;
+        }
+
+        $accent = sanitize_hex_color($accent);
 
         return array_merge($defaults, [
             'enabled'        => ! empty($raw['enabled']),

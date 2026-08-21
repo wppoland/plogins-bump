@@ -22,7 +22,7 @@ Plogins Bump adds a single, high-visibility order-bump offer above the payment m
 
 The bump line is tagged privately so it is never confused with a copy the shopper added themselves. Classic (shortcode) checkout.
 
-The full source lives at https://github.com/wppoland/plogins-bump.
+The full source lives at [github.com/wppoland/plogins-bump](https://github.com/wppoland/plogins-bump).
 
 == Installation ==
 

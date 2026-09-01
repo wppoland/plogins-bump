@@ -2,9 +2,9 @@
 Contributors: motylanogha
 Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ The full source lives at [github.com/wppoland/plogins-bump](https://github.com/w
 Plogins Bump includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-bump`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.6 =
+* Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header.
 
 = 1.0.5 =
 * Fix: the bump product list now only offers products the checkout can really show, and if the product you saved loses its price or sells out, the settings screen says the offer is hidden instead of leaving the choice looking fine.

@@ -4,7 +4,7 @@ Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,9 +26,9 @@ The full source lives at [github.com/wppoland/plogins-bump](https://github.com/w
 
 == Installation ==
 
-1. Upload to `/wp-content/plugins/bump`, or install via Plugins → Add New.
+1. Upload to `/wp-content/plugins/bump`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Go to WooCommerce → Bump, choose the bump product, write the copy, enable, and save.
+3. Go to WooCommerce > Bump, choose the bump product, write the copy, enable, and save.
 
 == Screenshots ==
 
@@ -40,6 +40,9 @@ The full source lives at [github.com/wppoland/plogins-bump](https://github.com/w
 Plogins Bump is fully translatable and ships the `plogins-bump.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.10 =
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
 
 = 1.0.9 =
 * The translation template was regenerated. It still named an older version of the plugin and pointed at source lines that had since moved, which is what translation tools read to show a string in context.

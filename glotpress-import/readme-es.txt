@@ -26,9 +26,9 @@ El código fuente completo está en https://github.com/wppoland/plogins-bump.
 
 == Installation ==
 
-1. Sube el plugin a `/wp-content/plugins/bump` o instálalo desde Plugins → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/bump` o instálalo desde Plugins > Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
-3. Ve a WooCommerce → Bump, elige el producto del bump, escribe el texto, actívalo y guarda.
+3. Ve a WooCommerce > Bump, elige el producto del bump, escribe el texto, actívalo y guarda.
 
 == Screenshots ==
 

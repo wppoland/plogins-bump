@@ -9,7 +9,7 @@ use Bump\Contract\HasHooks;
 defined('ABSPATH') || exit;
 
 /**
- * Admin settings page under WooCommerce → Bump.
+ * Admin settings page under WooCommerce > Bump.
  *
  * Stores everything in the `bump_settings` option (array). All output escaped,
  * all input sanitised on save.

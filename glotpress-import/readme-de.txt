@@ -26,9 +26,9 @@ Der vollständige Quellcode liegt unter https://github.com/wppoland/plogins-bump
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/bump` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/bump` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
-3. Gehe zu WooCommerce → Bump, wähle das Bump-Produkt, schreibe den Text, aktiviere das Angebot und speichere.
+3. Gehe zu WooCommerce > Bump, wähle das Bump-Produkt, schreibe den Text, aktiviere das Angebot und speichere.
 
 == Screenshots ==
 

@@ -20,5 +20,5 @@ namespace {
 namespace Bump {
     // Namespaced consts declared with `const` in the bootstrap.
     const VERSION     = '1.0.1';
-    const PLUGIN_FILE = '/tmp/wordpress/wp-content/plugins/bump/plogins-bump.php';
+    const PLUGIN_FILE = '/tmp/wordpress/wp-content/plugins/propono/propono.php';
 }

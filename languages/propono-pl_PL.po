@@ -13,20 +13,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : 2);\n"
-"X-Domain: plogins-bump\n"
+"X-Domain: propono\n"
 
 #. Plugin Name of the plugin
-#: plogins-bump.php
+#: propono.php
 msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
 msgstr "Plogins Bump - Podbicie zamówienia przy kasie dla WooCommerce"
 
 #. Plugin URI of the plugin
-#: plogins-bump.php
+#: propono.php
 msgid "https://plogins.com/plogins-bump/"
-msgstr "https://plogins.com/pl/plogins-bump/"
+msgstr "https://plogins.com/pl/propono/"
 
 #. Description of the plugin
-#: plogins-bump.php
+#: propono.php
 msgid ""
 "Show a one-click order-bump offer on the checkout so shoppers can add a "
 "complementary product before they pay."
@@ -35,16 +35,16 @@ msgstr ""
 "produkt uzupełniający przed płatnością."
 
 #. Author of the plugin
-#: plogins-bump.php
+#: propono.php
 msgid "WPPoland.com"
 msgstr "WPPoland.com"
 
 #. Author URI of the plugin
-#: plogins-bump.php
+#: propono.php
 msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
-#: plogins-bump.php:48
+#: propono.php:48
 msgid "Plogins Bump requires WooCommerce to be active."
 msgstr "Plogins Bump wymaga aktywnego WooCommerce."
 

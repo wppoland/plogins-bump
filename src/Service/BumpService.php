@@ -26,7 +26,7 @@ defined('ABSPATH') || exit;
 final class BumpService implements HasHooks
 {
     private const OPTION      = 'bump_settings';
-    private const HANDLE      = 'plogins-bump';
+    private const HANDLE      = 'propono';
     private const FLAG        = '_plogins_bump';
     private const NONCE       = 'plogins_bump_toggle';
     private const AJAX_ACTION = 'bump_toggle';
@@ -96,9 +96,9 @@ final class BumpService implements HasHooks
         $context = [
             'product'        => $product,
             'in_cart'        => null !== $this->findBumpCartKey(),
-            'heading'        => $this->text($settings['heading'] ?? '', __('One-time offer', 'plogins-bump')),
+            'heading'        => $this->text($settings['heading'] ?? '', __('One-time offer', 'propono')),
             'description'    => $this->text($settings['description'] ?? '', ''),
-            'checkbox_label' => $this->text($settings['checkbox_label'] ?? '', __('Yes, add this to my order!', 'plogins-bump')),
+            'checkbox_label' => $this->text($settings['checkbox_label'] ?? '', __('Yes, add this to my order!', 'propono')),
             'price_html'     => $this->priceHtml($product, $settings),
             'accent_color'   => (string) ($settings['accent_color'] ?? ''),
             'nonce'          => wp_create_nonce(self::NONCE),

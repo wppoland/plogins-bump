@@ -1,10 +1,10 @@
-=== Plogins Bump - Checkout Order Bump for WooCommerce ===
+=== Propono - Checkout Order Bump for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, order bump, upsell, checkout, conversion
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.10
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Show a one-click order-bump offer on the checkout so shoppers can add a compleme
 
 == Description ==
 
-Plogins Bump adds a single, high-visibility order-bump offer above the payment methods on the classic WooCommerce checkout. Ticking the checkbox adds your chosen product to the order and WooCommerce recalculates every total before payment, so the amount sent to the gateway already includes the bump. Unticking removes it just as fast.
+Propono adds a single, high-visibility order-bump offer above the payment methods on the classic WooCommerce checkout. Ticking the checkbox adds your chosen product to the order and WooCommerce recalculates every total before payment, so the amount sent to the gateway already includes the bump. Unticking removes it just as fast.
 
 * One offer, one checkbox, above the payment methods.
 * Pick any simple, purchasable product as the bump.
@@ -26,20 +26,23 @@ The full source lives at [github.com/wppoland/plogins-bump](https://github.com/w
 
 == Installation ==
 
-1. Upload to `/wp-content/plugins/bump`, or install via Plugins > Add New.
+1. Upload to `/wp-content/plugins/propono`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Go to WooCommerce > Bump, choose the bump product, write the copy, enable, and save.
+3. Go to WooCommerce > Order Bump, choose the bump product, write the copy, enable, and save.
 
 == Screenshots ==
 
 1. The order-bump offer above the payment methods on the checkout, with a one-click checkbox that adds the product to the order.
-2. The Bump settings under WooCommerce: bump product, heading, checkbox label, description and optional special price.
+2. The Propono settings under WooCommerce: bump product, heading, checkbox label, description and optional special price.
 
 == Translations ==
 
-Plogins Bump is fully translatable and ships the `plogins-bump.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Propono is fully translatable and ships the `propono.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Propono. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Propono is Esperanto for an offer. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.10 =
 * Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.

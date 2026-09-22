@@ -9,7 +9,7 @@ use Bump\Contract\HasHooks;
 defined('ABSPATH') || exit;
 
 /**
- * Admin settings page under WooCommerce > Bump.
+ * Admin settings page under WooCommerce > Order Bump.
  *
  * Stores everything in the `bump_settings` option (array). All output escaped,
  * all input sanitised on save.
@@ -17,7 +17,7 @@ defined('ABSPATH') || exit;
 final class Settings implements HasHooks
 {
     private const OPTION = 'bump_settings';
-    private const PAGE   = 'plogins-bump';
+    private const PAGE   = 'propono';
 
     public function registerHooks(): void
     {
@@ -30,8 +30,8 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Bump, Order Bump', 'plogins-bump'),
-            __('Bump', 'plogins-bump'),
+            __('Propono: order bump', 'propono'),
+            __('Order Bump', 'propono'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -47,7 +47,7 @@ final class Settings implements HasHooks
         $link = sprintf(
             '<a href="%s">%s</a>',
             esc_url(admin_url('admin.php?page=' . self::PAGE)),
-            esc_html__('Settings', 'plogins-bump'),
+            esc_html__('Settings', 'propono'),
         );
         array_unshift($links, $link);
 
@@ -91,56 +91,56 @@ final class Settings implements HasHooks
         ?>
         <div class="wrap">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-            <p><?php esc_html_e('Show a one-click order-bump offer above the payment methods on the checkout. Ticking it adds the product to the order and recalculates the total before payment.', 'plogins-bump'); ?></p>
+            <p><?php esc_html_e('Show a one-click order-bump offer above the payment methods on the checkout. Ticking it adds the product to the order and recalculates the total before payment.', 'propono'); ?></p>
             <form method="post" action="options.php">
                 <?php settings_fields(self::PAGE); ?>
                 <table class="form-table" role="presentation">
                     <tbody>
                         <tr>
-                            <th scope="row"><?php esc_html_e('Enable order bump', 'plogins-bump'); ?></th>
+                            <th scope="row"><?php esc_html_e('Enable order bump', 'propono'); ?></th>
                             <td>
                                 <label>
                                     <input type="checkbox" name="<?php echo esc_attr(self::OPTION); ?>[enabled]" value="1" <?php checked(! empty($s['enabled'])); ?> />
-                                    <?php esc_html_e('Show the order-bump offer on the checkout.', 'plogins-bump'); ?>
+                                    <?php esc_html_e('Show the order-bump offer on the checkout.', 'propono'); ?>
                                 </label>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="bump_product"><?php esc_html_e('Bump product', 'plogins-bump'); ?></label></th>
+                            <th scope="row"><label for="bump_product"><?php esc_html_e('Bump product', 'propono'); ?></label></th>
                             <td>
                                 <select id="bump_product" name="<?php echo esc_attr(self::OPTION); ?>[product_id]">
-                                    <option value="0"><?php esc_html_e('- Select a product -', 'plogins-bump'); ?></option>
+                                    <option value="0"><?php esc_html_e('- Select a product -', 'propono'); ?></option>
                                     <?php foreach ($choices as $id => $label) : ?>
                                         <option value="<?php echo esc_attr((string) $id); ?>" <?php selected($selected, $id); ?>><?php echo esc_html($label); ?></option>
                                     <?php endforeach; ?>
                                 </select>
-                                <p class="description"><?php esc_html_e('A simple, purchasable product offered as the bump. Pick something cheap and complementary. Products with no price, and products out of stock, are not listed because the checkout will not show them.', 'plogins-bump'); ?></p>
+                                <p class="description"><?php esc_html_e('A simple, purchasable product offered as the bump. Pick something cheap and complementary. Products with no price, and products out of stock, are not listed because the checkout will not show them.', 'propono'); ?></p>
                                 <?php if ($stale) : ?>
-                                    <p class="notice notice-warning inline"><?php esc_html_e('The saved product has no price or is out of stock, so the offer stays hidden on the checkout. Give it a price and stock, or pick another product.', 'plogins-bump'); ?></p>
+                                    <p class="notice notice-warning inline"><?php esc_html_e('The saved product has no price or is out of stock, so the offer stays hidden on the checkout. Give it a price and stock, or pick another product.', 'propono'); ?></p>
                                 <?php endif; ?>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="bump_heading"><?php esc_html_e('Heading', 'plogins-bump'); ?></label></th>
-                            <td><input type="text" id="bump_heading" class="regular-text" name="<?php echo esc_attr(self::OPTION); ?>[heading]" value="<?php echo esc_attr((string) $s['heading']); ?>" placeholder="<?php esc_attr_e('One-time offer', 'plogins-bump'); ?>" /></td>
+                            <th scope="row"><label for="bump_heading"><?php esc_html_e('Heading', 'propono'); ?></label></th>
+                            <td><input type="text" id="bump_heading" class="regular-text" name="<?php echo esc_attr(self::OPTION); ?>[heading]" value="<?php echo esc_attr((string) $s['heading']); ?>" placeholder="<?php esc_attr_e('One-time offer', 'propono'); ?>" /></td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="bump_checkbox_label"><?php esc_html_e('Checkbox label', 'plogins-bump'); ?></label></th>
-                            <td><input type="text" id="bump_checkbox_label" class="regular-text" name="<?php echo esc_attr(self::OPTION); ?>[checkbox_label]" value="<?php echo esc_attr((string) $s['checkbox_label']); ?>" placeholder="<?php esc_attr_e('Yes, add this to my order!', 'plogins-bump'); ?>" /></td>
+                            <th scope="row"><label for="bump_checkbox_label"><?php esc_html_e('Checkbox label', 'propono'); ?></label></th>
+                            <td><input type="text" id="bump_checkbox_label" class="regular-text" name="<?php echo esc_attr(self::OPTION); ?>[checkbox_label]" value="<?php echo esc_attr((string) $s['checkbox_label']); ?>" placeholder="<?php esc_attr_e('Yes, add this to my order!', 'propono'); ?>" /></td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="bump_description"><?php esc_html_e('Description', 'plogins-bump'); ?></label></th>
+                            <th scope="row"><label for="bump_description"><?php esc_html_e('Description', 'propono'); ?></label></th>
                             <td><textarea id="bump_description" class="large-text" rows="2" name="<?php echo esc_attr(self::OPTION); ?>[description]"><?php echo esc_textarea((string) $s['description']); ?></textarea></td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="bump_price"><?php esc_html_e('Override price', 'plogins-bump'); ?></label></th>
+                            <th scope="row"><label for="bump_price"><?php esc_html_e('Override price', 'propono'); ?></label></th>
                             <td>
                                 <input type="text" id="bump_price" class="small-text" name="<?php echo esc_attr(self::OPTION); ?>[bump_price]" value="<?php echo esc_attr((string) $s['bump_price']); ?>" inputmode="decimal" />
-                                <p class="description"><?php esc_html_e('Optional special price for the bump line only (e.g. 19.00). Leave empty to use the product\'s normal price.', 'plogins-bump'); ?></p>
+                                <p class="description"><?php esc_html_e('Optional special price for the bump line only (e.g. 19.00). Leave empty to use the product\'s normal price.', 'propono'); ?></p>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="bump_accent"><?php esc_html_e('Accent colour', 'plogins-bump'); ?></label></th>
+                            <th scope="row"><label for="bump_accent"><?php esc_html_e('Accent colour', 'propono'); ?></label></th>
                             <td><input type="text" id="bump_accent" class="regular-text" name="<?php echo esc_attr(self::OPTION); ?>[accent_color]" value="<?php echo esc_attr((string) $s['accent_color']); ?>" placeholder="#d97706" pattern="#?([A-Fa-f0-9]{3}|[A-Fa-f0-9]{6})" /></td>
                         </tr>
                     </tbody>
@@ -192,10 +192,10 @@ final class Settings implements HasHooks
         $name = $product instanceof \WC_Product
             ? $product->get_name()
             /* translators: %d: product id. */
-            : sprintf(__('Product #%d', 'plogins-bump'), $productId);
+            : sprintf(__('Product #%d', 'propono'), $productId);
 
         /* translators: %s: product name. */
-        return sprintf(__('%s (not available on the checkout)', 'plogins-bump'), $name);
+        return sprintf(__('%s (not available on the checkout)', 'propono'), $name);
     }
 
     /**

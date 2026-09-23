@@ -2,9 +2,10 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bump\n"
-"POT-Creation-Date: 2026-07-02T08:04:20+00:00\n"
+"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce "
+"0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/propono\n"
+"POT-Creation-Date: 2026-09-09T14:37:49+00:00\n"
 "PO-Revision-Date: 2026-07-07 00:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -17,8 +18,8 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: propono.php
-msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
-msgstr "Plogins Bump - order bump en el checkout para WooCommerce"
+msgid "Propono - Checkout Order Bump for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
 #: propono.php
@@ -45,80 +46,85 @@ msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
 #: propono.php:48
-msgid "Plogins Bump requires WooCommerce to be active."
-msgstr "Plogins Bump requiere que WooCommerce esté activo."
+msgid "Propono requires WooCommerce to be active."
+msgstr ""
 
 #: src/Admin/Settings.php:33
-msgid "Bump, Order Bump"
-msgstr "Bump, order bump"
+msgid "Propono: order bump"
+msgstr ""
 
 #: src/Admin/Settings.php:34
-msgid "Bump"
-msgstr "Bump"
+msgid "Order Bump"
+msgstr ""
 
 #: src/Admin/Settings.php:50
 msgid "Settings"
 msgstr "Ajustes"
 
-#: src/Admin/Settings.php:80
+#: src/Admin/Settings.php:94
 msgid ""
-"Show a one-click order-bump offer above the payment methods on the checkout."
-" Ticking it adds the product to the order and recalculates the total before "
+"Show a one-click order-bump offer above the payment methods on the checkout. "
+"Ticking it adds the product to the order and recalculates the total before "
 "payment."
 msgstr ""
 "Muestra una oferta de order bump con un clic encima de los métodos de pago "
 "en el checkout. Al marcarla, el producto se añade al pedido y el total se "
 "recalcula antes del pago."
 
-#: src/Admin/Settings.php:86
+#: src/Admin/Settings.php:100
 msgid "Enable order bump"
 msgstr "Habilitar aumento de pedido"
 
-#: src/Admin/Settings.php:90
+#: src/Admin/Settings.php:104
 msgid "Show the order-bump offer on the checkout."
 msgstr "Mostrar la oferta de order bump en el checkout."
 
-#: src/Admin/Settings.php:95
+#: src/Admin/Settings.php:109
 msgid "Bump product"
 msgstr "Producto bump"
 
-#: src/Admin/Settings.php:98
+#: src/Admin/Settings.php:112
 msgid "- Select a product -"
 msgstr "- Selecciona un producto -"
 
-#: src/Admin/Settings.php:103
+#: src/Admin/Settings.php:117
 msgid ""
 "A simple, purchasable product offered as the bump. Pick something cheap and "
-"complementary."
+"complementary. Products with no price, and products out of stock, are not "
+"listed because the checkout will not show them."
 msgstr ""
-"Un producto simple y comprable ofrecido como bump. Elige algo económico y "
-"complementario."
 
-#: src/Admin/Settings.php:107
+#: src/Admin/Settings.php:119
+msgid ""
+"The saved product has no price or is out of stock, so the offer stays hidden "
+"on the checkout. Give it a price and stock, or pick another product."
+msgstr ""
+
+#: src/Admin/Settings.php:124
 msgid "Heading"
 msgstr "Título"
 
-#: src/Admin/Settings.php:108 src/Service/BumpService.php:99
+#: src/Admin/Settings.php:125 src/Service/BumpService.php:99
 msgid "One-time offer"
 msgstr "Oferta única"
 
-#: src/Admin/Settings.php:111
+#: src/Admin/Settings.php:128
 msgid "Checkbox label"
 msgstr "Etiqueta del checkbox"
 
-#: src/Admin/Settings.php:112 src/Service/BumpService.php:101
+#: src/Admin/Settings.php:129 src/Service/BumpService.php:101
 msgid "Yes, add this to my order!"
 msgstr "Sí, ¡añádelo a mi pedido!"
 
-#: src/Admin/Settings.php:115
+#: src/Admin/Settings.php:132
 msgid "Description"
 msgstr "Descripción"
 
-#: src/Admin/Settings.php:119
+#: src/Admin/Settings.php:136
 msgid "Override price"
 msgstr "Anular precio"
 
-#: src/Admin/Settings.php:122
+#: src/Admin/Settings.php:139
 msgid ""
 "Optional special price for the bump line only (e.g. 19.00). Leave empty to "
 "use the product's normal price."
@@ -126,6 +132,37 @@ msgstr ""
 "Precio especial opcional solo para la línea del bump (por ejemplo, 19,00). "
 "Déjalo vacío para usar el precio normal del producto."
 
-#: src/Admin/Settings.php:126
+#: src/Admin/Settings.php:143
 msgid "Accent colour"
 msgstr "Color de acento"
+
+#. translators: %d: product id.
+#: src/Admin/Settings.php:195
+#, php-format
+msgid "Product #%d"
+msgstr ""
+
+#. translators: %s: product name.
+#: src/Admin/Settings.php:198
+#, php-format
+msgid "%s (not available on the checkout)"
+msgstr ""
+
+#~ msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
+#~ msgstr "Plogins Bump - order bump en el checkout para WooCommerce"
+
+#~ msgid "Plogins Bump requires WooCommerce to be active."
+#~ msgstr "Plogins Bump requiere que WooCommerce esté activo."
+
+#~ msgid "Bump, Order Bump"
+#~ msgstr "Bump, order bump"
+
+#~ msgid "Bump"
+#~ msgstr "Bump"
+
+#~ msgid ""
+#~ "A simple, purchasable product offered as the bump. Pick something cheap "
+#~ "and complementary."
+#~ msgstr ""
+#~ "Un producto simple y comprable ofrecido como bump. Elige algo económico y "
+#~ "complementario."

@@ -20,7 +20,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: propono.php
 msgid "Propono - Checkout Order Bump for WooCommerce"
-msgstr ""
+msgstr "Plogins Bump - Podbicie zamówienia przy kasie dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: propono.php
@@ -48,15 +48,15 @@ msgstr "https://wppoland.com"
 
 #: propono.php:48
 msgid "Propono requires WooCommerce to be active."
-msgstr ""
+msgstr "Bump wymaga aktywnego WooCommerce."
 
 #: src/Admin/Settings.php:33
 msgid "Propono: order bump"
-msgstr ""
+msgstr "Bump: podbicie zamówienia"
 
 #: src/Admin/Settings.php:34
 msgid "Order Bump"
-msgstr ""
+msgstr "Podbicie zamówienia"
 
 #: src/Admin/Settings.php:50
 msgid "Settings"
@@ -92,13 +92,13 @@ msgid ""
 "A simple, purchasable product offered as the bump. Pick something cheap and "
 "complementary. Products with no price, and products out of stock, are not "
 "listed because the checkout will not show them."
-msgstr ""
+msgstr "Prosty produkt do kupienia oferowany jako podbicie. Wybierz coś taniego i uzupełniającego. Produkty bez ceny oraz niedostępne w magazynie nie są wymienione, bo kasa ich nie pokaże."
 
 #: src/Admin/Settings.php:119
 msgid ""
 "The saved product has no price or is out of stock, so the offer stays hidden "
 "on the checkout. Give it a price and stock, or pick another product."
-msgstr ""
+msgstr "Zapisany produkt nie ma ceny albo jest niedostępny w magazynie, więc oferta pozostaje ukryta przy kasie. Nadaj mu cenę i stan magazynowy albo wybierz inny produkt."
 
 #: src/Admin/Settings.php:124
 msgid "Heading"
@@ -140,13 +140,13 @@ msgstr "Kolor akcentu"
 #: src/Admin/Settings.php:195
 #, php-format
 msgid "Product #%d"
-msgstr ""
+msgstr "Produkt #%d"
 
 #. translators: %s: product name.
 #: src/Admin/Settings.php:198
 #, php-format
 msgid "%s (not available on the checkout)"
-msgstr ""
+msgstr "%s (brak dostępności przy kasie)"
 
 #~ msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
 #~ msgstr "Plogins Bump - Podbicie zamówienia przy kasie dla WooCommerce"

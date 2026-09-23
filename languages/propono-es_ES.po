@@ -31,7 +31,7 @@ msgid ""
 "Show a one-click order-bump offer on the checkout so shoppers can add a "
 "complementary product before they pay."
 msgstr ""
-"Muestre una oferta de order bump con un clic en el checkout para que los "
+"Muestra una oferta de order bump con un clic en el checkout para que los "
 "compradores puedan añadir un producto complementario antes de pagar."
 
 #. Author of the plugin
@@ -66,7 +66,7 @@ msgid ""
 " Ticking it adds the product to the order and recalculates the total before "
 "payment."
 msgstr ""
-"Muestre una oferta de order bump con un clic encima de los métodos de pago "
+"Muestra una oferta de order bump con un clic encima de los métodos de pago "
 "en el checkout. Al marcarla, el producto se añade al pedido y el total se "
 "recalcula antes del pago."
 
@@ -84,14 +84,14 @@ msgstr "Producto bump"
 
 #: src/Admin/Settings.php:98
 msgid "- Select a product -"
-msgstr "- Seleccione un producto -"
+msgstr "- Selecciona un producto -"
 
 #: src/Admin/Settings.php:103
 msgid ""
 "A simple, purchasable product offered as the bump. Pick something cheap and "
 "complementary."
 msgstr ""
-"Un producto simple y comprable ofrecido como bump. Elija algo económico y "
+"Un producto simple y comprable ofrecido como bump. Elige algo económico y "
 "complementario."
 
 #: src/Admin/Settings.php:107
@@ -124,7 +124,7 @@ msgid ""
 "use the product's normal price."
 msgstr ""
 "Precio especial opcional solo para la línea del bump (por ejemplo, 19,00). "
-"Déjelo vacío para usar el precio normal del producto."
+"Déjalo vacío para usar el precio normal del producto."
 
 #: src/Admin/Settings.php:126
 msgid "Accent colour"

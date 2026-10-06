@@ -2,8 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce "
-"0.1.0\n"
+"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/propono\n"
 "POT-Creation-Date: 2026-09-09T14:37:49+00:00\n"
 "PO-Revision-Date: 2026-07-07 00:00+0000\n"
@@ -19,7 +18,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: propono.php
 msgid "Propono - Checkout Order Bump for WooCommerce"
-msgstr ""
+msgstr "Propono - Order bump en el checkout para WooCommerce"
 
 #. Plugin URI of the plugin
 #: propono.php
@@ -47,15 +46,15 @@ msgstr "https://wppoland.com"
 
 #: propono.php:48
 msgid "Propono requires WooCommerce to be active."
-msgstr ""
+msgstr "Propono necesita que WooCommerce esté activo."
 
 #: src/Admin/Settings.php:33
 msgid "Propono: order bump"
-msgstr ""
+msgstr "Propono: order bump"
 
 #: src/Admin/Settings.php:34
 msgid "Order Bump"
-msgstr ""
+msgstr "Order bump"
 
 #: src/Admin/Settings.php:50
 msgid "Settings"
@@ -63,8 +62,8 @@ msgstr "Ajustes"
 
 #: src/Admin/Settings.php:94
 msgid ""
-"Show a one-click order-bump offer above the payment methods on the checkout. "
-"Ticking it adds the product to the order and recalculates the total before "
+"Show a one-click order-bump offer above the payment methods on the checkout."
+" Ticking it adds the product to the order and recalculates the total before "
 "payment."
 msgstr ""
 "Muestra una oferta de order bump con un clic encima de los métodos de pago "
@@ -93,12 +92,18 @@ msgid ""
 "complementary. Products with no price, and products out of stock, are not "
 "listed because the checkout will not show them."
 msgstr ""
+"Un producto simple y comprable que se ofrece como bump. Elige algo barato y "
+"complementario. Los productos sin precio y los productos agotados no "
+"aparecen en la lista porque el checkout no los mostrará."
 
 #: src/Admin/Settings.php:119
 msgid ""
-"The saved product has no price or is out of stock, so the offer stays hidden "
-"on the checkout. Give it a price and stock, or pick another product."
+"The saved product has no price or is out of stock, so the offer stays hidden"
+" on the checkout. Give it a price and stock, or pick another product."
 msgstr ""
+"El producto guardado no tiene precio o está agotado, así que la oferta "
+"permanece oculta en el checkout. Asígnale un precio y stock, o elige otro "
+"producto."
 
 #: src/Admin/Settings.php:124
 msgid "Heading"
@@ -140,13 +145,13 @@ msgstr "Color de acento"
 #: src/Admin/Settings.php:195
 #, php-format
 msgid "Product #%d"
-msgstr ""
+msgstr "Producto #%d"
 
 #. translators: %s: product name.
 #: src/Admin/Settings.php:198
 #, php-format
 msgid "%s (not available on the checkout)"
-msgstr ""
+msgstr "%s (no disponible en el checkout)"
 
 #~ msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
 #~ msgstr "Plogins Bump - order bump en el checkout para WooCommerce"
@@ -161,8 +166,8 @@ msgstr ""
 #~ msgstr "Bump"
 
 #~ msgid ""
-#~ "A simple, purchasable product offered as the bump. Pick something cheap "
-#~ "and complementary."
+#~ "A simple, purchasable product offered as the bump. Pick something cheap and "
+#~ "complementary."
 #~ msgstr ""
 #~ "Un producto simple y comprable ofrecido como bump. Elige algo económico y "
 #~ "complementario."

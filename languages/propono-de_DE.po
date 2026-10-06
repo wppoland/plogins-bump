@@ -2,8 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce "
-"0.1.0\n"
+"Project-Id-Version: Plogins Bump - Checkout Order Bump for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/propono\n"
 "POT-Creation-Date: 2026-09-09T14:37:49+00:00\n"
 "PO-Revision-Date: 2026-07-07 00:00+0000\n"
@@ -19,7 +18,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: propono.php
 msgid "Propono - Checkout Order Bump for WooCommerce"
-msgstr ""
+msgstr "Propono - Order-Bump im Checkout für WooCommerce"
 
 #. Plugin URI of the plugin
 #: propono.php
@@ -47,15 +46,15 @@ msgstr "https://wppoland.com"
 
 #: propono.php:48
 msgid "Propono requires WooCommerce to be active."
-msgstr ""
+msgstr "Propono benötigt ein aktives WooCommerce."
 
 #: src/Admin/Settings.php:33
 msgid "Propono: order bump"
-msgstr ""
+msgstr "Propono: Order-Bump"
 
 #: src/Admin/Settings.php:34
 msgid "Order Bump"
-msgstr ""
+msgstr "Order-Bump"
 
 #: src/Admin/Settings.php:50
 msgid "Settings"
@@ -63,12 +62,12 @@ msgstr "Einstellungen"
 
 #: src/Admin/Settings.php:94
 msgid ""
-"Show a one-click order-bump offer above the payment methods on the checkout. "
-"Ticking it adds the product to the order and recalculates the total before "
+"Show a one-click order-bump offer above the payment methods on the checkout."
+" Ticking it adds the product to the order and recalculates the total before "
 "payment."
 msgstr ""
-"Zeige im Checkout über den Zahlungsmethoden ein Order-Bump-Angebot mit einem "
-"Klick. Wird es aktiviert, wird das Produkt zur Bestellung hinzugefügt und "
+"Zeige im Checkout über den Zahlungsmethoden ein Order-Bump-Angebot mit einem"
+" Klick. Wird es aktiviert, wird das Produkt zur Bestellung hinzugefügt und "
 "die Summe vor der Zahlung neu berechnet."
 
 #: src/Admin/Settings.php:100
@@ -93,12 +92,18 @@ msgid ""
 "complementary. Products with no price, and products out of stock, are not "
 "listed because the checkout will not show them."
 msgstr ""
+"Ein einfaches, kaufbares Produkt, das als Bump angeboten wird. Wähle etwas "
+"Günstiges und Ergänzendes. Produkte ohne Preis und nicht vorrätige Produkte "
+"werden nicht aufgeführt, weil der Checkout sie nicht anzeigt."
 
 #: src/Admin/Settings.php:119
 msgid ""
-"The saved product has no price or is out of stock, so the offer stays hidden "
-"on the checkout. Give it a price and stock, or pick another product."
+"The saved product has no price or is out of stock, so the offer stays hidden"
+" on the checkout. Give it a price and stock, or pick another product."
 msgstr ""
+"Das gespeicherte Produkt hat keinen Preis oder ist nicht vorrätig, daher "
+"bleibt das Angebot im Checkout ausgeblendet. Gib ihm einen Preis und "
+"Lagerbestand oder wähle ein anderes Produkt."
 
 #: src/Admin/Settings.php:124
 msgid "Heading"
@@ -129,8 +134,8 @@ msgid ""
 "Optional special price for the bump line only (e.g. 19.00). Leave empty to "
 "use the product's normal price."
 msgstr ""
-"Optionaler Sonderpreis nur für die Bump-Position (z. B. 19,00). Leer lassen, "
-"um den normalen Produktpreis zu verwenden."
+"Optionaler Sonderpreis nur für die Bump-Position (z. B. 19,00). Leer lassen,"
+" um den normalen Produktpreis zu verwenden."
 
 #: src/Admin/Settings.php:143
 msgid "Accent colour"
@@ -140,13 +145,13 @@ msgstr "Akzentfarbe"
 #: src/Admin/Settings.php:195
 #, php-format
 msgid "Product #%d"
-msgstr ""
+msgstr "Produkt #%d"
 
 #. translators: %s: product name.
 #: src/Admin/Settings.php:198
 #, php-format
 msgid "%s (not available on the checkout)"
-msgstr ""
+msgstr "%s (im Checkout nicht verfügbar)"
 
 #~ msgid "Plogins Bump - Checkout Order Bump for WooCommerce"
 #~ msgstr "Plogins Bump, Checkout Order Bump für WooCommerce"
@@ -161,8 +166,8 @@ msgstr ""
 #~ msgstr "Bump"
 
 #~ msgid ""
-#~ "A simple, purchasable product offered as the bump. Pick something cheap "
-#~ "and complementary."
+#~ "A simple, purchasable product offered as the bump. Pick something cheap and "
+#~ "complementary."
 #~ msgstr ""
-#~ "Ein einfaches, kaufbares Produkt, das als Bump angeboten wird. Wähle "
-#~ "etwas Günstiges und Ergänzendes."
+#~ "Ein einfaches, kaufbares Produkt, das als Bump angeboten wird. Wähle etwas "
+#~ "Günstiges und Ergänzendes."
